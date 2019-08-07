@@ -10,7 +10,3 @@ dependencies {
 	implementation 'de.retest:recheck-web:1.3.0'
     testImplementation 'junit:junit:4.12'
 }
-
-test {
-    useJUnitPlatform()
-}
