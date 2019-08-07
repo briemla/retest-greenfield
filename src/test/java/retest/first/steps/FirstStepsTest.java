@@ -2,6 +2,7 @@ package retest.first.steps;
 
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -18,6 +19,7 @@ public class FirstStepsTest {
     	driver = new ChromeDriver();
     }
 
+    @Ignore
     @Test
     public void scratchpad() throws Exception {
         re.startTest();
