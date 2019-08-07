@@ -1,5 +1,7 @@
 package retest.first.steps;
 
+import static org.junit.Assert.assertNotNull;
+
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -18,6 +20,7 @@ public class FirstGoogleTest {
 	public void setUp() {
 		re = new RecheckImpl();
 		driver = new ChromeDriver();
+		assertNotNull(driver);
 	}
 
 	@Test
@@ -28,11 +31,11 @@ public class FirstGoogleTest {
 		re.check(driver, "open");
 
 		re.capTest();
+		assertNotNull(driver);
 	}
 
 	@After
 	public void tearDown() {
 		re.cap();
-		driver.quit();
 	}
 }
