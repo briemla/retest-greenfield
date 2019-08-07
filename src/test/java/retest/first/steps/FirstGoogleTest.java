@@ -20,7 +20,7 @@ public class FirstGoogleTest {
 	public void setUp() {
 		re = new RecheckImpl();
 		driver = new ChromeDriver();
-		assertNotNull(driver);
+		assert null != driver : "Chrome driver";
 	}
 
 	@Test
