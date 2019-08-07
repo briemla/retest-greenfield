@@ -32,7 +32,7 @@ public class FirstGoogleTest {
 
 	@After
 	public void tearDown() {
-		driver.quit();
 		re.cap();
+		driver.quit();
 	}
 }
