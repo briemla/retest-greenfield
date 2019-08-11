@@ -1,11 +1,10 @@
 language: java
-dist: bionic
+dist: trusty
 
 addons:
   chrome: stable
   apt:
     packages:
-      - google-chrome-stable
       - chromium-chromedriver
 
 notifications:
