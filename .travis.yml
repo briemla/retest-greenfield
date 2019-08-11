@@ -17,6 +17,7 @@ cache:
 install: true
 
 before_script:
+  - google-chrome --version
   # include ChromeDriver in PATH
   - ln --symbolic /usr/lib/chromium-browser/chromedriver "${HOME}/bin/chromedriver"
 
