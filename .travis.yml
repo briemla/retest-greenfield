@@ -30,4 +30,4 @@ before_script:
   - echo ${GECKODRIVER_HASH} "geckodriver-${GECKODRIVER_VERSION}-linux64.tar.gz" | md5sum --check -
   - tar xf "geckodriver-${GECKODRIVER_VERSION}-linux64.tar.gz" -C ${HOME}/bin/
 
-script: gradle build
+script: gradle clean test
