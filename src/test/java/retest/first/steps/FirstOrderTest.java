@@ -2,7 +2,6 @@ package retest.first.steps;
 
 import org.junit.After;
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -18,7 +17,6 @@ public class FirstOrderTest {
 		driver = new RecheckDriver(new ChromeDriver());
 	}
 
-	@Ignore
 	@Test
 	public void check_order() throws Exception {
 		driver.startTest();
@@ -32,7 +30,7 @@ public class FirstOrderTest {
 
 		driver.capTest();
 	}
-	
+
 	@After
 	public void tearDown() {
 		driver.quit();
